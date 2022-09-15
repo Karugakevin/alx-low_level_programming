@@ -8,22 +8,17 @@
  */
 int main(void)
 {
-	unsigned long fib1 = 0, fib2 = 1, sum;
-	float tot_sum = 0;
+	long int x = 1, y = 2, z, w, sum = 2;
 
-	while (1)
+	for (w = 0; w < 50; w++)
 	{
-		sum = fib1 + fib2;
-		if (sum > 4000000)
-			break;
-
-		if ((sum % 2) == '0')
-			tot_sum += sum;
-
-		fib1 = fib2;
-		fib2 = sum;
+		z = x + y;
+		x = y;
+		y = z;
+		if ((z >= 2) && (z <= 4000000) && (z % 2 == 0))
+			sum += z;
 	}
-	printf("%.0f\n", tot_sum);
+	printf("%li\n", sum);
 
 	return (0);
 }
