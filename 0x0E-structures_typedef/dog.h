@@ -2,6 +2,7 @@
 #define DOG_H
 
 /**
+ * struct dog - make a dog
  * @name: what the dog is called
  * @age: how old the dog is
  * @owner: custodian of the animal
