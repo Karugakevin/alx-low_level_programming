@@ -22,5 +22,11 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
 	*head = ptr;
 
+	while (ptr != NULL)
+	{
+		printf("%d\n", ptr->n);
+		ptr = ptr->next;
+	}
+
 	return (ptr);
 }
